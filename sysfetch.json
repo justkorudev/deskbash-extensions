@@ -4,7 +4,7 @@
     "description": "Fetches system information",
     "url": "https://justkoru.github.io/deskbash-extensions/sysfetch.json",
     "commands": {
-        "sysfetch": "() => {
+        "sysfetch": () => {
             const sysInfo = {
                 'OS': "DeskBash v" + version,
                 'Screen resolution': `${screen.width}x${screen.height}`,
@@ -21,6 +21,6 @@
             }
             console.log(sysInfoString);
             document.getElementById('cli-output').innerHTML += `<div>${sysInfoString}</div>`;
-        }"
+        }
     }
 }
